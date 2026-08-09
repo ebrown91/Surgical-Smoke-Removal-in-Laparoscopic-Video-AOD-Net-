@@ -108,3 +108,5 @@ input / model output / ground truth:
   data augmentation, or a density-conditioned model)
 - Extend to a related surgical visibility task (e.g. blood/fluid region
   segmentation) as a follow-on project
+
+  Note: Initially developed on Kaggle: https://www.kaggle.com/code/arilikescoding/surgical-smoke-removal-in-laparoscopic-video
