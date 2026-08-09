@@ -80,7 +80,8 @@ for this model.
 ## Visual Results
 Validation-set examples (never seen during training), comparing smoky
 input / model output / ground truth:
-![Alt text](/validation_comparision_grid.png)
+
+![Alt text](/validation_comparison_grid.png)
 
 - **Light smoke case**: model output closely tracks ground truth, preserving
   fine tissue detail and instrument edges.
