@@ -35,11 +35,8 @@ DesmokeData's single-folder, suffix-based pairing convention
 ## Training
 - 25 epochs, batch size 8, learning rate 1e-4, MSE loss
 - Trained on a Kaggle T4 GPU
-- Loss dropped steadily from ~0.30 to ~0.03 over training, with a notable
-  step-change around epoch 6–7 where both loss and validation metrics
-  jumped sharply — a real, reproducible shift, not noise (confirmed by
-  matching patterns in both the training loss curve and held-out
-  validation PSNR/SSIM at the same point)
+  ![Alt text](/loss_evaluation_8epochs.png)
+- Loss dropped steadily from ~0.30 to ~0.03 over training
 
 ## Results
 
@@ -60,6 +57,7 @@ overfitting (validation metrics tracked training loss improvements
 throughout, with only minor, self-correcting dips). The curve was still
 gently rising at epoch 25, suggesting a modest amount of headroom remains
 with further training.
+![Alt text](/validation_by_epoch.png)
 
 ### Density-stratified evaluation
 Visual inspection showed the model performing very well on lightly-smoked
@@ -82,6 +80,7 @@ for this model.
 ## Visual Results
 Validation-set examples (never seen during training), comparing smoky
 input / model output / ground truth:
+![Alt text](/validation_comparision_grid.png)
 
 - **Light smoke case**: model output closely tracks ground truth, preserving
   fine tissue detail and instrument edges.
